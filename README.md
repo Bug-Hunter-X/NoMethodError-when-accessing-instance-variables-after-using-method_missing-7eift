@@ -1,0 +1,1 @@
+This example demonstrates a subtle issue in Ruby when combining `method_missing` with direct instance variable access. The `method_missing` method intercepts calls to undefined methods, but does not affect attempts to access instance variables directly.  Direct access to `@value` raises a `NoMethodError`.  This is a common trap for developers new to Ruby's dynamic nature.
